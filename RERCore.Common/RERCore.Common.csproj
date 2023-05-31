@@ -4,8 +4,11 @@
     <TargetFramework>net6.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>SharePoint.RERCore.Common</Title>
+    <PackageId>RERCore.Common</PackageId>
     <Authors>novaCapta</Authors>
     <Company>novaCapta</Company>
+    <PackageDescription>SharePoint Remote Event Receiver (RER) for .NET Core</PackageDescription>
+    <RepositoryUrl>https://github.com/ncgur/SharePoint.EventReceivers</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
