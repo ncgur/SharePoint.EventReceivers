@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>SharePoint.RERCore.Common</Title>
+    <Authors>novaCapta</Authors>
+    <Company>novaCapta</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Tokens\**" />
+    <EmbeddedResource Remove="Tokens\**" />
+    <None Remove="Tokens\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.8.2" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.28.1" />
+    <PackageReference Include="Microsoft.SharePointOnline.CSOM" Version="16.1.23508.12000" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.28.1" />
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.1" />
+  </ItemGroup>
+
+</Project>
