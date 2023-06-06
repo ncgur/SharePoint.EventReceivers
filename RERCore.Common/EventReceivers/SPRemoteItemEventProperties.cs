@@ -108,6 +108,10 @@ namespace Microsoft.SharePoint.Client.EventReceivers
 
                 return m_beforeProperties;
             }
+            set
+            {
+                m_beforeProperties = value;
+            }
         }
 
         public Dictionary<string, object> AfterProperties
@@ -120,6 +124,10 @@ namespace Microsoft.SharePoint.Client.EventReceivers
                 }
 
                 return m_afterProperties;
+            } 
+            set
+            {
+                m_afterProperties = value;
             }
         }
     }
